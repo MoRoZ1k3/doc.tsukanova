@@ -1569,6 +1569,7 @@ h1 {
 
   .portrait-image {
     width: min(23rem, 95%);
+    bottom: 1.5rem;
   }
 
   .portrait-note {
