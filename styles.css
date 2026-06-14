@@ -1562,14 +1562,37 @@ h1 {
     grid-template-columns: 1fr;
   }
 
+  .hero-grid {
+    gap: 1.4rem;
+  }
+
+  .hero-visual {
+    order: -1;
+  }
+
   .portrait-card {
-    min-height: 35rem;
+    display: grid;
+    gap: 0.8rem;
+    min-height: auto;
     padding: 1.2rem;
   }
 
+  .portrait-backdrop {
+    top: 3rem;
+    right: 50%;
+    bottom: auto;
+    z-index: 0;
+  }
+
   .portrait-image {
-    width: min(23rem, 95%);
-    bottom: 1.5rem;
+    position: relative;
+    right: auto;
+    bottom: auto;
+    z-index: 1;
+    width: min(24rem, 92%);
+    margin: 0 auto;
+    transform: none;
+    animation: none;
   }
 
   .portrait-note {
@@ -1577,12 +1600,13 @@ h1 {
     left: auto;
     right: auto;
     bottom: auto;
+    z-index: 2;
     width: 100%;
-    margin-top: 18rem;
+    margin-top: 0;
   }
 
   .portrait-note--secondary {
-    margin-top: 0.8rem;
+    margin-top: 0;
   }
 
   .education-core li {
